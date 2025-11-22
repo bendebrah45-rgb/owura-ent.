@@ -1,0 +1,122 @@
+/* Beta Button and Dropdown */
+
+#beta-dropdown {
+    display: flex;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00B0EF;
+    gap: 4px;
+    color: #fff;
+    border: 0;
+    padding: 0 7px;
+}
+
+#beta-dropdown:hover,
+.show #beta-dropdown,
+.open #beta-dropdown {
+    background-color: #00B0EF;
+}
+
+#beta-dropdown i {
+    font-size: 18px;
+    line-height: 1;
+}
+
+#beta-dropdown>span {
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.beta-dropdown {
+    width: 300px !important;
+    border-radius: 4px !important;
+    background: linear-gradient(#fff 0%, #fff 100%) !important;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16) !important;
+    padding: 27px 20px 20px 20px !important;
+}
+
+.beta-dropdown i {
+    position: absolute;
+    top: 15px;
+    right: 24px;
+    width: 20px;
+    height: 20px;
+    background: #00B0EF;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+[dir=rtl] .beta-dropdown i,
+.rtl .beta-dropdown i {
+    right: auto;
+    left: 24px
+}
+
+.beta-dropdown i:hover {
+    opacity: 0.88;
+}
+
+.beta-dropdown img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.beta-dropdown h2 {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.beta-dropdown h2 span {
+    text-transform: uppercase;
+}
+
+.beta-dropdown p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.beta-dropdown a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.beta-dropdown a:hover {
+    opacity: 0.88;
+}
+
+.beta-dropdown a.beta-show-feedback {
+    background: #00B0EF;
+    color: #fff;
+}
+
+.beta-dropdown a.beta-return-to-master {
+    background: #E4EBF2;
+    color: #75799D;
+}
+
+@media (max-width: 767.98px) {
+    .open .beta-dropdown,
+    .beta-dropdown.show {
+        width: auto !important;
+    }
+    .beta-line {
+        width: 100%;
+        height: 1px;
+        background-color: #ececec;
+        margin: 18px 0
+    }
+    .dropdown.s2020.open .dropdown-menu.beta-dropdown {
+        max-height: initial;
+    }
+}
